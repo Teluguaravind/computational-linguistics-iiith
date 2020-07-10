@@ -1,0 +1,62 @@
+
+//Selection Functionality//
+function getSelectvalue()
+  {
+    var selectedvalue = document.getElementByid(" ").value;
+    console.log(selectedvalue);
+  }
+  getSelectvalue();
+  
+  
+  //Arrangement Functionality //
+
+  function arrange() {
+  var arrangedvalue = document.getElementById("  ");
+}
+  getarrangedValue();
+  
+
+  //Sorting Functionality//
+  function sortList() {
+  var list,i,switching,b,shouldSwitch;
+  list = document.getElementById(" ")''
+  switching = true;
+  while (switching) {
+  switching = false;
+  b=list.getElementsByTagName(" ");
+  for (i=0;i<(b.length - 1); i++) {
+  shouldSwitch = false;
+  if (b[i].innerHTML.tolowerCase() > b[i+1].innerHTML.toLowerCase()) {
+  shouldSwitch = true;
+  break;
+}
+}
+if (shouldSwitch) {
+  b[i].parentNode.insertBefore(b[i+1],b[i]);
+  switching = true;
+}
+}
+// checking correctness functionality //
+function is_correct_sentence(input_str) {
+  var first_char = input_str[0];
+  var last_char = input_str[input_str.length - 1];
+  return / [A-Z]/.test(first_char) && last_char == "."
+}
+console.log(is_correct_Sentence("\* sentence */"));
+}
+// Hiding Functionality //
+<script>
+  $(document).ready(function(){
+    $(".sentence").click(function(){
+      $("sentence").hide();
+    };
+  };
+  </script>
+}
+
+
+
+
+
+
+  
