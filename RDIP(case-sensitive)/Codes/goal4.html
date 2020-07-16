@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    
+</head>
+<body> 
+   
+   <div id= "demo">
+	</div>
+	<button onclick="newsentences()">" "</button>
+	<script>
+var sentences = []
+sentences[0] = "John ate an apple before afternoon."; 
+sentences[1] = "some students like to study in the night.";
+sentences[2] = "John and Mary went to church.";
+sentences[3] =  "John went to church after eating.";
+sentences[4] =  "did he go to market.";
+sentences[5] =  "the woman who called my sister sells cosmetics.";
+sentences[6] =  "john goes to the library and studies";  
+sentences[7] =   "John ate an apple so did she.";
+sentences[8] =  "the teacher returned the book after she noticed the error";
+sentences[9] =   "I told her that I bought a book yesterday";
+
+function newsentences() {
+               var randomsentences = Math.floor(Math.random() * (sentences.length));
+        document.getElementByID('demo').innerHTML = sentences[randomsentences];
+        }
+ </script>       
+      <div id="devil"></div>
+      <button onclick="newelements()">" "</button>
+     <script>
+      var elements = []
+      elements[0] =  "राम और शयाम बाजार गयें";
+      elements[1] =   "राम सौया और शयाम भी";
+      elements[2] =   "मैंने उसे बताया कि राम सौ रहा है";
+      elements[3] =   "राम खाकर सौया";
+      elements[4] =   "बिलियौं को मारकर कुता सौ गया";
+      elements[5] =   "एक लाल किताब वहाँ है";
+      elements[6] =   "एक बङी सी किताब वहाँ है";
+      
+      function newelements() {
+        var randomelements = Math.floor(Math.random()*(elements.length));
+        document.getElementByID('devil').innerHTML = elements[randomelements];
+      }
+      </script>
+</body>
+</html>
