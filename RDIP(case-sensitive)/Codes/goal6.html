@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#reform {
+			min-height: 200px;
+			min-width: 200px;
+			
+		}
+	</style>
+</head>
+<body>
+<div id ="dummy"></div>
+<form>
+	<input type="button" value="Reform the sentence" onclick="removesentence()"/>
+</form>
+<script>
+	function removesentence() {
+		var sen = document.getElementById('dummy');
+		sen.parentNode.removeChild(sen);
+		return false;
+	}
+</script>
+
+
+</body>
+</html>
