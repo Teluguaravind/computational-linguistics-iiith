@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+<button class="button button1">John</button>
+<button class="button button2">Ate</button>
+<button class="button button3">An</button>
+<button class="button button4">Apple</button>
+<button class="button button5">Before</button>
+<button class="button button6">Afternoon</button>
+
+<br><br><button onclick="myFunction()">Click on</button></br></br>
+
+
+<p id="demo"></p>
+<br><br><button class = "button button7">Check  Correctness of The Sentence</button></br></br>
+<script>
+	function myFunction() {
+    var str1 = "john ";
+    var str2 = "Ate ";
+    var str3 = "An ";
+    var str4 = "Apple ";
+    var str5 = "Before ";
+    var str6 = "Afternoon ";
+    var res = str1.concat(str2) + str3.concat(str4) + str5.concat(str6);
+    document.getElementById("demo").innerHTML = res;
+
+}
+    </script>
+</body>
+</html>
