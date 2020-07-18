@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  
+</head>
+<body>
+<button onclick="toggle()">GET CORRECT SENTENCE</button>
+<button id="test" onclick="toggle1()">Hide the correct sentence</button>
+<button id="test1">Get Answers</button>
+
+<script>
+  
+    var toggled = false;
+    function toggle() {
+      if(!toggled) {
+        toggled = true;
+        document.getElementById("test").style.display = "none";
+        return;
+       }
+       if(toggled) {
+        toggled = false;
+        document.getElementById("test").style.display = "block";
+        return;
+      }
+    }
+   var toggling = false;
+    function toggle1() {
+      if(!toggling) {
+        toggling = true;
+        document.getElementById("test1").style.display = "none";
+        return;
+      }
+      if(toggling) {
+        toggling = false;
+        document.getElementById("test1").style.display = "block";
+        return;
+      }
+    }
+</script>
+</body>
+</html>
